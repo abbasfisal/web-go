@@ -20,6 +20,6 @@
 
 # Go workspace file
 go.work
-./nginx/nginx-golang.cert
+./nginx/nginx-golang.crt
 ./nginx/nginx-golang.key
 ./.idea
