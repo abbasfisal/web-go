@@ -12,8 +12,8 @@ services:
     restart: always
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
-      - ./nginx/golang-bot7.ir-cert.pem:/etc/nginx/ssl/golang-bot7.ir-cert.pem;
-      - ./nginx/golang-bot7.ir-privateKey.pem:/etc/nginx/ssl/golang-bot7.ir-privateKey.pem;
+      - ./nginx/golang-bot7.ir-cert.pem:/etc/nginx/ssl/golang-bot7.ir-cert.pem
+      - ./nginx/golang-bot7.ir-privateKey.pem:/etc/nginx/ssl/golang-bot7.ir-privateKey.pem
 
 
     ports:
