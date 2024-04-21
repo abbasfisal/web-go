@@ -12,8 +12,8 @@ services:
     restart: always
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
-      - ./nginx/nginx.crt:/etc/nginx/ssl/nginx-golang.crt
-      - ./nginx/nginx.key:/etc/nginx/ssl/nginx-golang.key
+      - ./nginx/nginx-golang.crt:/etc/nginx/ssl/nginx-golang.crt
+      - ./nginx/nginx-golang.key:/etc/nginx/ssl/nginx-golang.key
 
     ports:
       - "80:80"
