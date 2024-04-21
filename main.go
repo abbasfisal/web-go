@@ -25,12 +25,12 @@ func main() {
 
 		fmt.Fprintf(w, "<h1>Hello, %s!\n</h1>", title)
 	})
-	//
-	//r.HandleFunc("/panic", func(w http.ResponseWriter, r *http.Request) {
-	//	panic("just for panic test")
-	//})
 
-	err := http.ListenAndServe(":8080", r)
+	r.HandleFunc("/panic", func(w http.ResponseWriter, r *http.Request) {
+		panic("just for panic test")
+	})
+
+	err := http.ListenAndServe(":8083", r)
 	if err != nil {
 		log.Fatal(err)
 	}
